@@ -11,7 +11,9 @@ from transformers import pipeline
 st.set_page_config(page_title="AI Sentiment Analyzer", page_icon="🧠", layout="centered")
 
 # Load the RoBERTa model with a true Neutral class
-device = 0 if torch.cuda.is_available() else -1
+device = 0 if torch.cuda.is_available() else -1 # Check if GPU is available; otherwise, use CPU, because with GPU it would be faster 
+
+# Load the sentiment analysis model with device optimization
 sentiment_pipeline = pipeline(
     "sentiment-analysis",
     model="cardiffnlp/twitter-roberta-base-sentiment",
