@@ -1,3 +1,8 @@
+#Jay Lawrence C. Cerniaz
+#Wian Lei A. Santos
+#BSIT - 2A
+#Date: 10/14/2025
+
 import streamlit as st
 import torch
 from transformers import pipeline
@@ -57,6 +62,6 @@ if st.button("🔍 Analyze Sentiment"):
 
 # Footer
 st.markdown(
-    "<hr><p style='text-align: center;'>Made with ❤️ by Jay Lawrence Cerniaz</p>",
+    "<hr><p style='text-align: center;'>Made with ❤️ by Jay Lawrence Cerniaz and Wian Lei Santos</p>",
     unsafe_allow_html=True
 )
